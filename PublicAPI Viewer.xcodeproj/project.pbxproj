@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1688EBC020BF470800B2270D /* APIListModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688EBBF20BF470800B2270D /* APIListModelController.swift */; };
+		1688EBC220BF584000B2270D /* APISearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688EBC120BF584000B2270D /* APISearchViewController.swift */; };
+		1688EBC420BF594D00B2270D /* APIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688EBC320BF594D00B2270D /* APIListViewController.swift */; };
 		169D49E820BF3E2300719012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169D49E720BF3E2300719012 /* AppDelegate.swift */; };
-		169D49EA20BF3E2300719012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169D49E920BF3E2300719012 /* ViewController.swift */; };
 		169D49ED20BF3E2300719012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169D49EB20BF3E2300719012 /* Main.storyboard */; };
 		169D49F020BF3E2300719012 /* PublicAPI_Viewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 169D49EE20BF3E2300719012 /* PublicAPI_Viewer.xcdatamodeld */; };
 		169D49F220BF3E2400719012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169D49F120BF3E2400719012 /* Assets.xcassets */; };
 		169D49F520BF3E2400719012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169D49F320BF3E2400719012 /* LaunchScreen.storyboard */; };
+		169D49FD20BF3E5A00719012 /* API List Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169D49FC20BF3E5A00719012 /* API List Model.swift */; };
+		16A761A520BF6D8200264AD5 /* Digital Ocean.png in Resources */ = {isa = PBXBuildFile; fileRef = 16A761A420BF6D8200264AD5 /* Digital Ocean.png */; };
+		16A761A720BF6FEB00264AD5 /* APIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A761A620BF6FEB00264AD5 /* APIDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1688EBBF20BF470800B2270D /* APIListModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIListModelController.swift; sourceTree = "<group>"; };
+		1688EBC120BF584000B2270D /* APISearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchViewController.swift; sourceTree = "<group>"; };
+		1688EBC320BF594D00B2270D /* APIListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIListViewController.swift; sourceTree = "<group>"; };
 		169D49E420BF3E2300719012 /* PublicAPI Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PublicAPI Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		169D49E720BF3E2300719012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		169D49E920BF3E2300719012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		169D49EC20BF3E2300719012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		169D49EF20BF3E2300719012 /* PublicAPI_Viewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PublicAPI_Viewer.xcdatamodel; sourceTree = "<group>"; };
 		169D49F120BF3E2400719012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		169D49F420BF3E2400719012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169D49F620BF3E2400719012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		169D49FC20BF3E5A00719012 /* API List Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API List Model.swift"; sourceTree = "<group>"; };
+		16A761A420BF6D8200264AD5 /* Digital Ocean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Digital Ocean.png"; sourceTree = "<group>"; };
+		16A761A620BF6FEB00264AD5 /* APIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +67,59 @@
 			isa = PBXGroup;
 			children = (
 				169D49E720BF3E2300719012 /* AppDelegate.swift */,
-				169D49E920BF3E2300719012 /* ViewController.swift */,
-				169D49EB20BF3E2300719012 /* Main.storyboard */,
+				169D4A0320BF402C00719012 /* Models */,
+				169D4A0220BF402900719012 /* Model Controller */,
+				169D4A0120BF402700719012 /* View Controllers */,
+				169D4A0020BF402400719012 /* Resources */,
+				169D49FE20BF401800719012 /* UI */,
 				169D49F120BF3E2400719012 /* Assets.xcassets */,
+				16A761A420BF6D8200264AD5 /* Digital Ocean.png */,
+			);
+			path = "PublicAPI Viewer";
+			sourceTree = "<group>";
+		};
+		169D49FE20BF401800719012 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				169D49EB20BF3E2300719012 /* Main.storyboard */,
 				169D49F320BF3E2400719012 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		169D4A0020BF402400719012 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				169D49F620BF3E2400719012 /* Info.plist */,
 				169D49EE20BF3E2300719012 /* PublicAPI_Viewer.xcdatamodeld */,
 			);
-			path = "PublicAPI Viewer";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		169D4A0120BF402700719012 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1688EBC120BF584000B2270D /* APISearchViewController.swift */,
+				1688EBC320BF594D00B2270D /* APIListViewController.swift */,
+				16A761A620BF6FEB00264AD5 /* APIDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		169D4A0220BF402900719012 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1688EBBF20BF470800B2270D /* APIListModelController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		169D4A0320BF402C00719012 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				169D49FC20BF3E5A00719012 /* API List Model.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16A761A520BF6D8200264AD5 /* Digital Ocean.png in Resources */,
 				169D49F520BF3E2400719012 /* LaunchScreen.storyboard in Resources */,
 				169D49F220BF3E2400719012 /* Assets.xcassets in Resources */,
 				169D49ED20BF3E2300719012 /* Main.storyboard in Resources */,
@@ -139,8 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				169D49F020BF3E2300719012 /* PublicAPI_Viewer.xcdatamodeld in Sources */,
-				169D49EA20BF3E2300719012 /* ViewController.swift in Sources */,
+				1688EBC420BF594D00B2270D /* APIListViewController.swift in Sources */,
+				169D49FD20BF3E5A00719012 /* API List Model.swift in Sources */,
+				1688EBC220BF584000B2270D /* APISearchViewController.swift in Sources */,
+				1688EBC020BF470800B2270D /* APIListModelController.swift in Sources */,
 				169D49E820BF3E2300719012 /* AppDelegate.swift in Sources */,
+				16A761A720BF6FEB00264AD5 /* APIDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4CCUMQ33UK;
-				INFOPLIST_FILE = "PublicAPI Viewer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PublicAPI Viewer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4CCUMQ33UK;
-				INFOPLIST_FILE = "PublicAPI Viewer/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/PublicAPI Viewer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
