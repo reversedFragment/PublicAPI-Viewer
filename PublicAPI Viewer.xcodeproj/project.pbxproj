@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165F9B9B20BFEF790014683B /* API Bookmark model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165F9B9A20BFEF790014683B /* API Bookmark model.swift */; };
 		1688EBC020BF470800B2270D /* APIListModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688EBBF20BF470800B2270D /* APIListModelController.swift */; };
 		1688EBC220BF584000B2270D /* APISearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688EBC120BF584000B2270D /* APISearchViewController.swift */; };
 		1688EBC420BF594D00B2270D /* APIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1688EBC320BF594D00B2270D /* APIListViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		165F9B9A20BFEF790014683B /* API Bookmark model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API Bookmark model.swift"; sourceTree = "<group>"; };
 		1688EBBF20BF470800B2270D /* APIListModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIListModelController.swift; sourceTree = "<group>"; };
 		1688EBC120BF584000B2270D /* APISearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISearchViewController.swift; sourceTree = "<group>"; };
 		1688EBC320BF594D00B2270D /* APIListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIListViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				169D49FC20BF3E5A00719012 /* API List Model.swift */,
+				165F9B9A20BFEF790014683B /* API Bookmark model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				1688EBC420BF594D00B2270D /* APIListViewController.swift in Sources */,
 				169D49FD20BF3E5A00719012 /* API List Model.swift in Sources */,
 				1688EBC220BF584000B2270D /* APISearchViewController.swift in Sources */,
+				165F9B9B20BFEF790014683B /* API Bookmark model.swift in Sources */,
 				1688EBC020BF470800B2270D /* APIListModelController.swift in Sources */,
 				169D49E820BF3E2300719012 /* AppDelegate.swift in Sources */,
 				16A761A920BF732600264AD5 /* APIDetailViewController.swift in Sources */,
