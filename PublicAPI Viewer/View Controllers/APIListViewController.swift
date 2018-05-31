@@ -40,7 +40,7 @@ extension APIListViewController: UITableViewDataSource {
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.termCellID, for: indexPath)
-        cell.textLabel?.text = apis[indexPath.row].api
+        cell.textLabel?.text = apis[indexPath.row].title
         cell.detailTextLabel?.text = apis[indexPath.row].description
         
         return cell

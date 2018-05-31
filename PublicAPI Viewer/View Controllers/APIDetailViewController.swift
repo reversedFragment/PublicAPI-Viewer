@@ -10,6 +10,9 @@ import UIKit
 
 class APIDetailViewController: UIViewController {
     
+    
+
+
     @IBOutlet weak var apiLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var authLabel: UILabel!
@@ -28,7 +31,7 @@ class APIDetailViewController: UIViewController {
     
     func updateViews() {
         guard let apiDetail = apiDetail, self.isViewLoaded else { return }
-        apiLabel.text = ("\(apiDetail.api)")
+        apiLabel.text = ("\(apiDetail.title)")
         descriptionLabel.text = ("Description: \(apiDetail.description)")
         authLabel.text = ("Authorization Type: \(apiDetail.auth)")
         httpsLabel.text = ("HTTPS Compatible: \(apiDetail.https)")

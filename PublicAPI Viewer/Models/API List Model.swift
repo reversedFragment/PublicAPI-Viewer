@@ -13,7 +13,7 @@ struct TopLevelData: Codable {
 }
 
 struct openAPI: Codable {
-    let api: String
+    let title: String
     let description: String
     let auth: Auth
     let https: Bool.BooleanLiteralType
@@ -22,7 +22,7 @@ struct openAPI: Codable {
     let category: String
     
     enum CodingKeys: String, CodingKey {
-        case api = "API"
+        case title = "API"
         case description = "Description"
         case auth = "Auth"
         case https = "HTTPS"

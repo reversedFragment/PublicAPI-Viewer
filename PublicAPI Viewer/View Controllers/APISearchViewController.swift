@@ -23,10 +23,14 @@ class APISearchViewController : UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func searchButtonTapped(_ sender: Any) {
         APIController.apiSearch = nil
     
         guard let descriptionToSearch = searchAPITextField.text else {
+            return
+        }
+        guard let titleToSearch = searchAPITextField.text else {
             return
         }
         
@@ -36,15 +40,25 @@ class APISearchViewController : UIViewController {
                     self.performSegue(withIdentifier: Constants.segueToTableID, sender: nil)
                     
                 }
-            } else {
-                DispatchQueue.main.async {
-                    let alert = UIAlertController(title: nil, message: "No APIs Found", preferredStyle: .alert)
-                    let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-                    alert.addAction(cancelAction)
-                    self.present(alert, animated: true, completion: nil)
+            }
+            else if APIController.apiSearch == nil {
+                APIController.fetchAPITitle(searchByTitle: titleToSearch) {
+                    if APIController.apiSearch != nil {
+                        DispatchQueue.main.async {
+                            self.performSegue(withIdentifier: Constants.segueToTableID, sender: nil)
+                        }
+                    } else {
+                        DispatchQueue.main.async {
+                            let alert = UIAlertController(title: nil, message: "No APIs Found", preferredStyle: .alert)
+                            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                            alert.addAction(cancelAction)
+                            self.present(alert, animated: true, completion: nil)
+                            
+                        }
                     }
                 }
+            }
         }
-    
     }
 }
+
