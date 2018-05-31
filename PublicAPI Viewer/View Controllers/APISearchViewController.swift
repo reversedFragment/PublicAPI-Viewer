@@ -24,6 +24,8 @@ class APISearchViewController : UIViewController {
     }
     
     @IBAction func searchButtonTapped(_ sender: Any) {
+        APIController.apiSearch = nil
+    
         guard let descriptionToSearch = searchAPITextField.text else {
             return
         }

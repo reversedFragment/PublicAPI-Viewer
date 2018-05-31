@@ -16,7 +16,7 @@ struct openAPI: Codable {
     let api: String
     let description: String
     let auth: Auth
-    let https: Bool
+    let https: Bool.BooleanLiteralType
     let cors: Cors
     let link: String
     let category: String

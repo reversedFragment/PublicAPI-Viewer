@@ -18,11 +18,15 @@ class APIController {
     /// Temporary Storage Properties
     static var apiSearch: [openAPI]?
     
+    
 
     /// API Request Functions
     
     // #1: Get APIs by search description or none at all to receive entire list
-    static func fetchAPIs(searchByDescription: String, completion: @escaping (() -> Void)) {
+    static func fetchAPIs(searchByDescription: StringLiteralType, completion: @escaping (() -> Void)) {
+        if searchByDescription == "" {
+            return
+        }
         
       // URL check
         guard let url = Constants.baseURL else {

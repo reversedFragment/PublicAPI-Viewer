@@ -46,4 +46,15 @@ extension APIListViewController: UITableViewDataSource {
         return cell
     }
     
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailVC" {
+            let destinationVC = segue.destination as? APIDetailViewController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let transferredAPI = APIController.apiSearch?[indexPath.row]
+                destinationVC?.apiDetail = transferredAPI
+            }
+        }
+    }
 }
