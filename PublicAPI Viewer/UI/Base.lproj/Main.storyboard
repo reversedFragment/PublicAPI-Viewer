@@ -152,7 +152,7 @@
             </objects>
             <point key="canvasLocation" x="1512.8" y="63.418290854572717"/>
         </scene>
-        <!--Title-->
+        <!--Detail View Controller-->
         <scene sceneID="sMU-cO-UaR">
             <objects>
                 <viewController id="4QW-Vs-wbu" customClass="APIDetailViewController" customModule="PublicAPI_Viewer" customModuleProvider="target" sceneMemberID="viewController">
@@ -242,7 +242,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zjD-nS-cU6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="zM2-HI-8dh">
+                    <navigationItem key="navigationItem" id="zM2-HI-8dh">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="FHO-aD-zk7"/>
                     </navigationItem>
                     <connections>
